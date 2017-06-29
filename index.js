@@ -4,6 +4,9 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+// const userController = require('./controller/user');
+// const showController = require('./controller/show');
+
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -19,9 +22,9 @@ app.use(session({
     saveUninitialized: true
 }));
 
-const auth = require('./services/auth.js');
-app.use(auth.passportInstance);
-app.use(auth.passportSession);
+// const auth = require('./services/auth.js');
+// app.use(auth.passportInstance);
+// app.use(auth.passportSession);
 
 app.use(logger('dev'));
 
@@ -29,15 +32,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
-
-
-
-
-
+// app.use('/user', userController);
+// app.use('/show', showController);
 
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.send('this is working');
 });
 
 app.listen(PORT, () => console.log('Server listening on port', PORT));
