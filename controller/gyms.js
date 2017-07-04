@@ -3,7 +3,7 @@ const gym = require('../models/gyms');
 const auth = require('../services/auth');
 const passport = require('passport');
 
-router.get('/', auth.restrict, (res, req) => {
+router.post('/search', auth.restrict, (res, req) => {
   console.log('is this working');
   let renderObj = {}
     gym

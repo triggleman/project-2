@@ -175,11 +175,83 @@ body {
 		background-repeat: no-repeat;
 }
 
+/*/////////////////////////////////////////////////////////////////////////////////////*/
 
 
 
+.profilebody {
+	background-image: url('http://wallpapercave.com/wp/EnDM8YS.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+/*	display: flex;
+	justify-content: center;*/
+}
 
+.profilebody > h1 {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	font-size: 3em;
+	color: white;
+	position: relative;
+	left: 220px;
+}
 
+.profileinfo {
+	border: 2px solid white;
+	border-radius: 10px;
+	height: 300px;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+	position: relative;
+	left: 250px;
+}
 
+.favoritebtn > a {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	font-size: 1.2em;
+	color: white;
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding-top: 5px;
+	width: 200px;
+	display: flex;
+	justify-content: center;
+	margin: 20px auto;
+}
+
+.searchbtn > a {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	font-size: 1em;
+	color: white;
+	text-decoration: none;
+	border: 1.2px solid white;
+	border-radius: 10px;
+	padding: 5px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	margin: 20px auto;
+}
+
+.logoutbtn > a {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	font-size: 1em;
+	color: white;
+	text-decoration: none;
+	border: 1.2px solid white;
+	border-radius: 10px;
+	padding: 5px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	margin: 20px auto;
+}
 
 
