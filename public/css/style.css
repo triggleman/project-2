@@ -8,16 +8,86 @@ body {
 	background-repeat: no-repeat;
 }
 
-.home-main-container {
+/*.home-main-container {
 	display: flex;
 	justify-content: center;
-}
+}*/
 
 .home-title {
 	color: white;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 2.5em;
+	text-align: center;
+	position: relative;
+	top: 20px;
 }
+
+.login {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/*position: relative;*/
+	top: 50px;
+	height: 100px;
+}
+
+.login > h1 {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2em;
+}
+
+.login > a {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	width: 50px;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+
+.signup {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/*position: relative;
+*/	top: 90px;
+	height: 100px;
+}
+
+.signup > h1 {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2em;
+}
+
+.signup > a {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	width: 70px;
+	padding: 5px;
+	margin: 0 auto;
+
+}
+
+.info {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 60px;
+	left: 270px;
+	border: 2px solid white;
+	height: 300px;
+	width: 300px;
+	border-radius: 5px;
+
+}
+
 
 .fake-button {
 	color: white;
@@ -29,8 +99,87 @@ body {
 
 }
 
-#map {
-   width: 100%;
-   height: 400px;
-   background-color: grey;
- }
+/*/////////////////////////////////////////////////////////////////*/
+
+.loginbody {
+	background-image: url('https://rebel-performance.com/wp-content/uploads/2014/12/photodune-4175893-dumbbell-background-s.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.loginh1 {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	font-size: 3em;
+}
+
+.form {
+	border: 2px solid black;
+	border-radius: 10px;
+	height: 300px;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.user-form {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 1.5em;
+	padding: 5px;
+	margin: 20px auto;
+}
+
+.user-form > button {
+	width: 90px;
+	margin: 5px auto;
+	padding: 5px;
+	font-size: 0.7em;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.user-form > a {
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 90px;
+	margin: 10px auto;
+	background-color: white;
+	padding: 5px;
+}
+
+.emailinput {
+	height: 50px;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.signuph1 {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	font-size: 3em;
+}
+
+.newbody {
+	background-image: url('http://wallpapercave.com/wp/1YiV7wz.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+

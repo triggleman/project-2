@@ -1,16 +1,22 @@
 const axios = require('axios');
 
-function getAllGyms(){
+function getAllGyms(city){
 	console.log('does the axios work')
 	const promise = axios({
-		url: 'https://api.yelp.com/v3/businesses/search?term=gyms&latitude=40.730610&longitude=-73.935242',
+		url: `https://maps.googleapis.com/maps/api/place/textsearch/json?query=gyms+in+${req.body.city}&key=${process.env.GOOGLE_PLACE_KEY}`,
 		method: 'GET',
-		headers:{
-			'Authorization': 'Bearer xLfVhkUaMnwpjkcRyHmqsoqnAfaUcfYP51bvm6in3UMXpNwkXXJahFlpOrJVNlZEsjsosAM__vc3Mpg1QA1AbSd7pqQsW4XkkjRKCVDBWoGivzQiOBL3B3IEFlBVWXYx'
-		} 
+
 	})
 	return promise;
 }
+
+// function gymLocation(){
+// 	const promise = axios({
+// 		url: `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=${process.env.GEOCODING_KEY}`,
+// 		method: 'GET'
+// 	})
+// 	return promise;
+// }
 
 
 

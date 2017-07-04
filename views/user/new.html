@@ -2,23 +2,32 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
   <title>Sign Up</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="newbody">
   <main>
     <section class='center-container'>
+      <h1 class="signuph1">Sign Up</h1>
+      <div class="form">
       <form action="/user" class="user-form" method="POST">
-        <h1>Sign Up</h1>
-        <label for="email">Email</label>
-        <input id="email" type="text" name="user[email]" placeholder="kim.krs@example.com">
-        <label for="password">Password</label>
-        <input id="password" type="password" name="user[password]" placeholder="password">
+
+        <div class="emailinput">
+          <label for="email">Email</label>
+          <input id="email" type="text" name="user[email]" placeholder="email@gmail.com">
+        </div>
+
+        <div class="passwordinput">
+          <label for="password">Password</label>
+          <input id="password" type="password" name="user[password]" placeholder="password">
+        </div>
 
         <button>Sign Up</button>
         <a href="/user/login">Log In</a>
       </form>
+    </div>
     </section>
   </main>
 </body>
