@@ -1,11 +1,6 @@
 $(()=>{
 	console.log('script is working')
 
-		let gymId = [];
-		let gymName = [];
-		let gymLatLng = [];
-
-
 		//generate map
         var latlng = {lat: 40.739998, lng: -73.990098};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -62,14 +57,6 @@ $(()=>{
         var marker = new google.maps.Marker({
           position: item.cords,
           map: map,
-          // icon: {
-          // 	path: SQUARE_PIN,
-          //   fillColor: '#00CCBB',
-          //   fillOpacity: 1,
-          //   strokeColor: '',
-          //   strokeWeight: 0
-          // },
-          // map_icon_label: '<span class="map-icon map-icon-gym"></span>'
         });
 
         if(item.content){
@@ -84,13 +71,13 @@ $(()=>{
       
 
 
-    $.ajax({
-    	method: 'POST',
-    	url: '/user/favorite',
-    	success: (response => {
-    		console.log(response)
-;    	})
-    })
+//     $.ajax({
+//     	method: 'POST',
+//     	url: '/user/favorite',
+//     	success: (response => {
+//     		console.log(response)
+// ;    	})
+//     })
 	
 
 
