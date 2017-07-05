@@ -1,10 +1,6 @@
 const pgp = require('pg-promise')();
 
 // configuration object
-const db = pgp({
-    host: 'localhost',
-    port: 5432,
-    database: 'gym_crud',
-});
+var db = pgp(process.env.DATABASE_URL || 'postgres://toddriggleman@localhost:5432/gym_crud');
 
 module.exports = db;
