@@ -3,28 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My App</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="dist/css/map-icons.css">
+  <script src="dist/js/map-icons.js"></script>
 	<script src="/js/jquery.js"></script>
-    <script src="/js/script.js"></script>
-
-
+  <script src="/js/script.js"></script>
 
 </head>
-<body>
-	<h1>This will be my main page</h1>
-     <nav>
-      <a href="/favorites">Favorites</a>
+<body class="appbody">
+     <div class="infowindow">
+      <a href="/user/favorites">Favorites</a>
       <a href="/user/logout">Log Out</a>
-    </nav>
-
-<form id="search">
-      <input type="text" id="search-input" placeholder="Address/Zip Code" />
-      <button id="search-button">Search</button>
-    </form>
-
+      <a href="/user/profile">Back To Profile</a>
+    </div>
 
 	    <div id="map">
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4002ixIk-9dcbh9QHeGFFOao3QLOzyl0"></script>
-    </div>
+       <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkj1wjR8NYGzUvQJC2gfQ0UWSacAeY1XU">
+    </script> 
+      </div>
+
+<span class="map-icon map-icon-point-of-interest"></span>
+
+<!--       <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkj1wjR8NYGzUvQJC2gfQ0UWSacAeY1XU">
+    </script> -->
+    
 	
 </body>
 </html>

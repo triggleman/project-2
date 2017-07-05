@@ -6,8 +6,18 @@
 	<title>Favorite Gyms</title>
 	<link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-	<h1>This is my favorite page</h1>
+<body class="favsbody">
+	
+	<h1>Favorites</h1>
+
+	<a href="/user/profile">Back To Profile</a>
+
+	<div class="favsdiv">
+		{{#data}}
+		<p>{{ name }}</p>
+		<p>{{ location.display_address }}</p>
+		{{/data}}
+	</div>
 	
 </body>
 </html>

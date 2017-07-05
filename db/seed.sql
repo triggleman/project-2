@@ -8,7 +8,8 @@ CREATE TABLE users (
 );
 
 CREATE TABLE gyms (
-id BIGSERIAL PRIMARY KEY,
+id SERIAL PRIMARY KEY,
 name VARCHAR(225),
-address VARCHAR(225),,
-)
+address VARCHAR(225),
+gym_id INTEGER REFERENCES users
+);

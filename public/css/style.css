@@ -8,10 +8,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-/*.home-main-container {
-	display: flex;
-	justify-content: center;
-}*/
 
 .home-title {
 	color: white;
@@ -114,8 +110,8 @@ body {
 }
 
 .form {
-	border: 2px solid black;
-	border-radius: 10px;
+	border: 3px solid black;
+	border-radius: 15px;
 	height: 300px;
 	width: 250px;
 	display: flex;
@@ -135,12 +131,14 @@ body {
 }
 
 .user-form > button {
-	width: 90px;
+	width: 100px;
 	margin: 5px auto;
 	padding: 5px;
 	font-size: 0.7em;
-	border: 1px solid black;
+	border: 1px solid red;
 	border-radius: 5px;
+	background-color: white;
+	color: red;
 }
 
 .user-form > a {
@@ -151,7 +149,7 @@ body {
 	width: 90px;
 	margin: 10px auto;
 	background-color: white;
-	padding: 5px;
+	padding: 1px;
 }
 
 .emailinput {
@@ -215,9 +213,9 @@ body {
 	font-size: 1.2em;
 	color: white;
 	text-decoration: none;
-	border: 1px solid white;
-	border-radius: 10px;
-	padding-top: 5px;
+	border: 1.5px solid white;
+	border-radius: 7px;
+	padding: 5px;
 	width: 200px;
 	display: flex;
 	justify-content: center;
@@ -230,8 +228,8 @@ body {
 	font-size: 1em;
 	color: white;
 	text-decoration: none;
-	border: 1.2px solid white;
-	border-radius: 10px;
+	border: 1.5px solid white;
+	border-radius: 7px;
 	padding: 5px;
 	width: 150px;
 	display: flex;
@@ -245,13 +243,88 @@ body {
 	font-size: 1em;
 	color: white;
 	text-decoration: none;
-	border: 1.2px solid white;
-	border-radius: 10px;
+	border: 1.5px solid white;
+	border-radius: 7px;
 	padding: 5px;
 	width: 150px;
 	display: flex;
 	justify-content: center;
 	margin: 20px auto;
+}
+
+.appbody {
+	background-color: black;
+}
+
+.infowindow{
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+}
+
+.infowindow > a {
+	text-decoration: none;
+	color: white;
+	font-size: 1em;
+	border: 1px solid white;
+	border-radius: 8px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	width: 150px;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+	height: 20px;
+
+}
+
+.favsbody {
+	background-color: black;
+}
+
+.favsbody > h1 {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+}
+
+.favsbody > a {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	border: 1.5px solid white;
+	border-radius: 5px;
+	padding: 5px;
+	text-decoration: none;
+	position: relative;
+	left: 50px;
+}
+
+.favsdiv {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border: 1px solid white;
+	border-radius: 15px;
+	width: 400px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.map-icon-gym .map-icon {
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 48px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+
+#map {
+	height: 800px;
+	width: 100%;
 }
 
 

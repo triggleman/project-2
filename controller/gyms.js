@@ -1,19 +1,25 @@
 const router = require('express').Router();
-const gym = require('../models/gyms');
+const yelpGym = require('../services/yelpgyms');
 const auth = require('../services/auth');
 const passport = require('passport');
+const gymModel = require('../models/gyms');
 
-router.post('/search', auth.restrict, (res, req) => {
-  console.log('is this working');
+
+router.get('/search', (req, res) => {
+  console.log('search route works');
   let renderObj = {}
-    gym
-      .getAllGyms()
+    yelpGym
+      .yelpGyms()
       .then((data) => {
-        console.log(data);
-        res.render('app/index');
-
+        console.log(data.data.businesses);
+        // renderObj = data.data.businesses
+        res.render('app/index', renderObj)
       })
 })
+
+
+
+
 
 
 
