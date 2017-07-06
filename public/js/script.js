@@ -1,6 +1,9 @@
 $(()=>{
 	console.log('script is working')
 
+
+
+
 		//generate map
         var latlng = {lat: 40.739998, lng: -73.990098};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -57,6 +60,7 @@ $(()=>{
         var marker = new google.maps.Marker({
           position: item.cords,
           map: map,
+
         });
 
         if(item.content){
@@ -69,15 +73,13 @@ $(()=>{
         }
     }
       
+        $('#search').on('submit', (e) => {
+        e.preventDefault();
+        const $location = $('#location').val();
+        console.log($location);
+    });
 
 
-//     $.ajax({
-//     	method: 'POST',
-//     	url: '/user/favorite',
-//     	success: (response => {
-//     		console.log(response)
-// ;    	})
-//     })
 	
 
 

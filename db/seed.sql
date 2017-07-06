@@ -11,5 +11,6 @@ CREATE TABLE gyms (
 id SERIAL PRIMARY KEY,
 name VARCHAR(225),
 address VARCHAR(225),
-gym_id INTEGER REFERENCES users
+gym_id VARCHAR,
+user_id INT REFERENCES users(id)
 );

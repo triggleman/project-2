@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>My App</title>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" type="text/css" href="dist/css/map-icons.css">
-  <script src="dist/js/map-icons.js"></script>
-	<script src="/js/jquery.js"></script>
-  <script src="/js/script.js"></script>
-
+    <meta charset="UTF-8">
+    <title>My App</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/map-icons.css">
+    <script src="dist/js/map-icons.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/script.js"></script>
 </head>
+
 <body class="appbody">
-     <div class="infowindow">
-      <a href="/user/favorites">Favorites</a>
-      <a href="/user/logout">Log Out</a>
-      <a href="/user/profile">Back To Profile</a>
+    <div class="infowindow">
+        <a href="/user/favorites">Favorites</a>
+        <a href="/user/logout">Log Out</a>
+        <a href="/user/profile">Back To Profile</a>
     </div>
+    <div class="gym-form">
+        <form action="/app/search" id="search" method="GET">
+            <label for="location">Location</label>
+            <button onclick="getLocation()" class="current">Use Current Location</button>
+            <br>
+            <input id="location" type="text" name="user[location]" placeholder="New York, NY">
+            <br>
+            <input type="submit" id="get-gyms" value="Get Gyms">
+        </form>
+    </div>
+<!--     got code from https://www.w3schools.com/html/html5_geolocation.asp
+    <script>
+    var location = document.getElementById("location");
 
-	    <div id="map">
-       <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkj1wjR8NYGzUvQJC2gfQ0UWSacAeY1XU">
-    </script> 
-      </div>
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            location.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
 
-<span class="map-icon map-icon-point-of-interest"></span>
-
-<!--       <script async defer
+    function showPosition(position) {
+        location.innerHTML = position.coords.latitude + ',' + position.coords.longitude;
+    }
+    </script>
+ -->
+    <div id="map"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkj1wjR8NYGzUvQJC2gfQ0UWSacAeY1XU">
+    </script>
+    <!-- <span class="map-icon map-icon-gym"></span> -->
+    <!--       <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkj1wjR8NYGzUvQJC2gfQ0UWSacAeY1XU">
     </script> -->
-    
-	
 </body>
+
 </html>

@@ -313,18 +313,19 @@ body {
 	margin: 0 auto;
 }
 
-.map-icon-gym .map-icon {
-	font-size: 24px;
-	color: #FFFFFF;
-	line-height: 48px;
-	text-align: center;
-	white-space: nowrap;
+.gym-form {
+	background-color: grey;
+	height: 600px;
+	width: 300px;
+	position: absolute;
 }
 
 
 #map {
-	height: 800px;
-	width: 100%;
+	height: 600px;
+	width: 1000px;
+	float: right;
+	position: relative;
 }
 
 
